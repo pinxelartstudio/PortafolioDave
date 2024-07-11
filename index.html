@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Dave</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Portafolio Dave</a>
+        <div class="menuToggle"></div>
+        <ul class="nav">
+            <li class="active"><a href="#home">Inicio</a></li>
+            <li><a href="#formacion">Formación</a></li>
+            <li><a href="#portafolio">Portafolio</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </header>
+    <section id="home">
+        <div class="contenido">
+            <h2>Dave Martínez</h2>
+            <p>Soy un desarrollador front-end apasionado por crear interfaces de usuario atractivas y funcionales. Tengo experiencia en el desarrollo de sitios web y aplicaciones web utilizando las últimas tecnologías, como HTML, CSS, JavaScript, PHP y React. También tengo experiencia en el uso de programas de diseño como Illustrator y Photoshop para crear activos visuales, tengo habilidad para aprender, entender y aplicar nuevas tecnologías rápidamente.</p>
+            <a href="#" class="btn">Descargar HV</a>
+        </div>
+        <img src="images/dave2.png" alt="" class="men">
+    </section>
+    <section id="formacion">
+        <div class="secText">
+            <h2>Formación académica</h2>
+            <p>Diseño Gráfico - Fundación Universitaria Los Libertadores, Diplomado en desarrollo de aplicaciones Web, Diplomado en Desarrollo de Software - Universidad de Antioquia, Curso Introducción a la Programación Con JavaScript, Curso Introducción a La Programación HTML Con CSS - CET Colsubsidio, Formación Principiante en Programación, Formación Lógica de programación con JavaScript - Alura Latam.</p>
+        </div>
+        <div class="content">
+            <div class="servicesBx">
+                <img src="images/icon1.png" alt="">
+                <h3>Diseño Web</h3>
+            </div>
+
+            <div class="servicesBx">
+                <img src="images/icon2.png" alt="">
+                <h3>Desarrollo de Aplicaciones Web</h3>
+            </div>
+
+            <div class="servicesBx">
+                <img src="images/icon3.png" alt="">
+                <h3>Android</h3>
+            </div>
+
+            <div class="servicesBx">
+                <img src="images/icon4.png" alt="">
+                <h3>Juegos y Realidad Aumentada</h3>
+            </div>
+        </div>
+        <div class="center">
+            <a href="#" class="btn">contratar</a>
+        </div>
+    </section>
+    <section id="portafolio">
+        <div class="secText">
+            <h2>Algo de mi Trabajo</h2>
+            <p>Encriptador de texto: Challenge Alura Codificador proyecto realizado con HTML, CSS y JavaScript.
+                <br>Juego ahorcado: proyecto creado con HTML y JavaScript.
+                <br> AluraFlix: proyecto desarrollado en React.</p>
+        </div>
+        <div class="content">
+            <div class="imgBx">
+                <img src="images/img1.png" alt="">
+            </div>
+
+            <div class="imgBx">
+                <img src="images/img2.png" alt="">
+            </div>
+
+            <div class="imgBx">
+                <img src="images/img3.png" alt="">
+            </div>
+
+            <div class="imgBx">
+                <img src="images/img4.png" alt="">
+            </div>
+
+            <div class="imgBx">
+                <img src="images/img5.png" alt="">
+            </div>
+
+            <div class="imgBx">
+                <img src="images/img6.png" alt="">
+            </div>
+        </div>
+        <div class="center">
+            <a href="#" class="btn">Ver Más</a>
+        </div>
+    </section>
+    <section id="contacto">
+        <div class="secText">
+            <h2>¿Cómo te puedo ayudar?</h2>
+            <p>Me apasiona crear experiencias web que sean a la vez hermosas y fáciles de usar. Me encanta trabajar en proyectos desafiantes que me permiten aprender nuevas tecnologías y mejorar mis habilidades. Soy un jugador de equipo y me comunico de manera efectiva con los diseñadores, desarrolladores y clientes.</p>
+        </div>
+        <div class="content">
+            <a href="#"><ion-icon name="mail-outline"></ion-icon>dave@pinxelartstudio.com</a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon>@pinxelartstudio</a>
+            <a href="#"><ion-icon name="logo-whatsapp"></ion-icon> +57 3174657820</a>
+        </div>
+        <div class="center">
+            <p class="copyrights">Copyright ©<a href="#"> Dave martínez </a>Curso Alura</p>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        let list = document.querySelectorAll('.nav li');
+        function active(){
+            list.forEach((i) =>
+            i.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((i) =>
+        i.addEventListener('click', active));
+
+        let menuToggle = document.querySelector('.menuToggle');
+        let header = document.querySelector('header');
+        menuToggle.onclick = function(){
+            header.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
